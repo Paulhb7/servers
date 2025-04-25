@@ -1,0 +1,30 @@
+{
+  "name": "@modelcontextprotocol/server-sequential-ethical-thinking",
+  "version": "0.1.0",
+  "description": "Experimental MCP server for sequential ethical reasoning using deontological and consequentialist analysis. Based on Anthropic's sequential thinking server.",
+  "license": "MIT",
+  "author": "Paul Barbaste",
+  "type": "module",
+  "bin": {
+    "mcp-server-sequential-ethical-thinking": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/*.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "0.5.0",
+    "chalk": "^5.3.0",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/yargs": "^17.0.32",
+    "shx": "^0.3.4",
+    "typescript": "^5.3.3"
+  }
+}
